@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS workspace.postech_tech_challenge_f3.airports (
 
 -- Ingestão via COPY INTO a partir do volume CSV com data parametrizada
 COPY INTO workspace.postech_tech_challenge_f3.airports
-FROM '/Volumes/workspace/postech_tech_challenge_f3/raw/{{ingest_date}}/airports.csv'
+FROM '/Volumes/workspace/postech_tech_challenge_f3/raw/2026-03-09/airports.csv'
 FILEFORMAT = CSV
 FORMAT_OPTIONS ('header' = 'true')
 COPY_OPTIONS ('mergeSchema' = 'true');
